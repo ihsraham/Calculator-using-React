@@ -1,5 +1,6 @@
 {
   "name": "calculator-with-react",
+  "homepage": "https://ihsraham.github.io/Calculator-using-React",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -11,11 +12,12 @@
     "react-scripts": "4.0.0"
   },
   "devDependencies": {
-    "@babel/runtime": "7.13.8",
-    "typescript": "4.1.3"
+    "@babel/runtime": "7.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
